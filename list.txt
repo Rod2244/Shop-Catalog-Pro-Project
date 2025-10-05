@@ -1,0 +1,43 @@
+Routes in the website
+
+*products (grid)
+*products id (details)
+*products id specs (nested)
+*cart and about
+
+Query in list in the website
+
+*?q = (Query used for searching in a search bar example: phone = all products that have a phone in their name or description)
+*?cat = (Category used for showing products that under a certain category example: electronics = all products under electronics)
+*?min = and ?max = (Controls the minimum or maximum price range example min = 1000&max = 5000 then all the products that are ranging at 1000 until 5000 will be displayed)
+*sort = (Used for sorting product list example sort = price then all product will show all the product based of their prices in order and usually ascending)
+        (another example: sort =  rating then all product will be sorted based on the rating from highest to lowest)
+*Clear Filters resets URL (used for clearing/ removing all query paramas from the url)
+
+From details, a ‘Back to results’ link returns to preserved list query params.
+(This means when a certain user click a product where the user already have a listed query params
+ like /shop?q=shoes&cat=men&sort=price this then hedecided to go back to the result of his query
+ params, he will not go back to the /shop but he will go back to /shop?q=shoes&cat=men&sort=price)
+
+Props: pass discountCode to /cart; pass gridColumns to /products.
+(This just passing props to use in cart and products example in /cart
+ you want to use the discountmoto10 to get a 10% discount then used
+ it like a props to pass it to the /cart same goes to the /products
+ if you want to display only 4 products per column then pass it like props
+ so it could determine how many products it should display)
+
+Bonus:
+*In summary all the product that the user add to cart will be saved
+ in the browser's storage so even the user refreshes the page or closes and
+ reopen the page, the cart will still remember the product that the user
+ add to cart and it also show in the url if how many products that in the
+ cart.
+
+
+Navigation bar
+-Home page
+-product page
+-cart page
+-about page
+-logo 
+-search bar
