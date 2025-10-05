@@ -1,4 +1,6 @@
-// src/components/About.jsx
+import { Link } from "react-router-dom";
+import Control from "../reusable-components/Control";
+
 function About() {
   return (
     <div className="max-w-3xl mx-auto text-center mt-12 bg-white shadow-lg rounded-2xl p-8">
@@ -20,9 +22,9 @@ function About() {
       </p>
 
       <div className="mt-8">
-        <button className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-2 rounded-lg transition duration-200">
-          Explore Products
-        </button>
+        <Link to="/products">
+          <Control label="Shop Now" className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-2 rounded-lg transition duration-200" />
+        </Link>
       </div>
     </div>
   );
