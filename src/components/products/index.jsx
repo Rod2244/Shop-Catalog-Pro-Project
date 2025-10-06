@@ -12,9 +12,9 @@ function Products({ gridColumns = 4 }) {
   const sortOption = params.get("sort") || "";
 
   const products = [
-    { name: "Monitor", category: "Accessories",price: 199.99 , rating: 4  },
-    { name: "System Unit", category: "Computers", price: 799.9, rating: 5  },
-    { name: "Mouse", category: "Accessories", price: 29.99, rating: 4 },
+    { name: "Monitor", category: "Accessories",price: 199.99 , rating: 4, image: "/product-image/ProductImg1.jpg"},
+    { name: "System Unit", category: "Computers", price: 799.9, rating: 5 },
+    { name: "Mouse", category: "Accessories", price: 29.99, rating: 4, image: "/product-image/ProductImg2.jpg" },
     { name: "Headset", category: "Audio Gear", price: 89.99, rating: 2 },
     { name: "Keyboard", category: "Accessories", price: 49.99, rating: 4 },
     { name: "Mouse Pad", category: "Accessories", price: 19.99, rating: 4 },
@@ -70,6 +70,8 @@ function Products({ gridColumns = 4 }) {
     default:
       break;
   }
+
+  
 
   return (
     <div>

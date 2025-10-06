@@ -1,4 +1,5 @@
-// src/components/Products/ProductFilters.jsx
+import ClearFilters from "./ClearFilter";
+
 function ProductFilters({ params, setParams, categories, selectedCategory, minPrice, maxPrice, sortOption }) {
   const updateParam = (key, value) => {
     const newParams = new URLSearchParams(params);
@@ -8,7 +9,7 @@ function ProductFilters({ params, setParams, categories, selectedCategory, minPr
   };
 
   return (
-    <div className="mb-4 text-white space-y-3">
+    <div className="mb-4 text-white flex flex-wrap items-center gap-4">
       {/* Category Filter */}
       <div>
         <label htmlFor="category" className="font-semibold mr-2">
@@ -65,6 +66,9 @@ function ProductFilters({ params, setParams, categories, selectedCategory, minPr
           <option value="rating-asc">Rating: Low → High</option>
           <option value="rating-desc">Rating: High → Low</option>
         </select>
+      </div>
+      <div>
+        <ClearFilters />
       </div>
     </div>
   );

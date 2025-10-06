@@ -1,15 +1,15 @@
 // src/components/Products/ProductList.jsx
 import ProductCard from "./ProductCard";
 
-function ProductList({ products, gridColumns }) {
-  const style = {
-    display: "grid",
-    gridTemplateColumns: `repeat(${gridColumns}, 1fr)`,
-    gap: "10px",
-  };
-
+function ProductList({ products }) {
   return (
-    <div style={style}>
+    <div className="grid gap-4 
+      grid-cols-1       /* mobile */
+      sm:grid-cols-2    /* small screens */
+      md:grid-cols-3    /* medium screens */
+      lg:grid-cols-4    /* large screens */
+      xl:grid-cols-5    /* extra-large screens */
+    ">
       {products.length > 0 ? (
         products.map((item, i) => <ProductCard key={i} item={item} />)
       ) : (
