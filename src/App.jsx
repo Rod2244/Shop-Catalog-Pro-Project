@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cart from "./components/Cart";
-import Products from "./components/Products";
+import Product from "./components/products";
 import About from "./components/About"
 import Navbar from "./components/Navbar"; 
 import Home from "./components/Home";
@@ -10,18 +10,17 @@ import NotFound from "./components/NotFound";
 function App() {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-gray-100">
-        <Navbar /> {/* Navbar appears at the top of all pages */}
-
-        <div className="flex-grow p-6">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/cart" element={<Cart discountCode="SAVE10" />} />
-            <Route path="/products" element={<Products gridColumns={3} />} />
-            <Route path="/about" element={<About />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </div>
+      <div className="flex flex-col min-h-screen bg-gradient-to-b from-[#0f0f1f] via-[#1a1a40] to-[#2b0040]">
+        <Navbar /> 
+          <div className="flex-grow p-6">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/cart" element={<Cart discountCode="SAVE10" />} />
+              <Route path="/products" element={<Product gridColumns={3} />} />
+              <Route path="/about" element={<About />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </div>
         <Footer />
       </div>
     </Router>

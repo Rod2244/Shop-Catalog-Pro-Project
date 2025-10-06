@@ -24,7 +24,7 @@ function Navbar() {
       alt="Shop Logo"
       className="h-12 w-auto object-contain"
     />
-    <span className="text-2xl font-bold tracking-wide">CyberGear</span>
+    <span className="text-2xl bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 text-transparent bg-clip-text font-bold tracking-wide">CyberGear</span>
   </Link>
 
   {/* Center: Search Bar */}
@@ -41,14 +41,14 @@ function Navbar() {
     />
     <button
       type="submit"
-      className="text-yellow-400 font-semibold hover:text-yellow-500 transition-colors cursor-pointer"
+      className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 text-transparent bg-clip-text font-semibold hover:text-yellow-500 transition-colors cursor-pointer"
     >
       🔍
     </button>
   </form>
 
   {/* Right: Navigation Links */}
-  <div className="flex justify-center sm:justify-end gap-6 text-lg">
+  <div className="font-bold flex justify-center bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 text-transparent bg-clip-text sm:justify-end gap-6 text-lg">
     <Link
       to="/"
       className="hover:text-yellow-400 transition-colors duration-200"

@@ -6,7 +6,7 @@ function Footer() {
         
         {/* Left Section: Shop Name */}
         <div className="text-center md:text-left mb-3 md:mb-0">
-          <h2 className="text-lg font-bold text-yellow-400">CyberGear</h2>
+          <h2 className="text-lg font-bold bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 text-transparent bg-clip-text">CyberGear</h2>
           <p className="text-sm">Level up your tech, power up your game ⚡</p>
         </div>
 
