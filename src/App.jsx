@@ -6,11 +6,15 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import NotFound from "./components/NotFound";
+import ScrollToTop from "./components/ScrolltoTop";
+import ProductDetails from "./components/ProductDetails";
+import ProductSpecs from "./components/ProductSpecs";
 
 function App() {
   return (
     <Router>
       <div className="flex flex-col  min-h-screen bg-gradient-to-b from-[#0f0f1f] via-[#1a1a40] to-[#2b0040]">
+        <ScrollToTop />
         <Navbar /> 
           <div className="flex-grow p-3">
             <Routes>
@@ -24,6 +28,9 @@ function App() {
                 />
               }
             />
+              <Route path="/product/:id" element={<ProductDetails />} >
+                <Route path="specs" element={<ProductSpecs />} />
+              </Route>
               <Route path="/about" element={<About />} />
               <Route path="*" element={<NotFound />} />
             </Routes>

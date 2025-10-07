@@ -57,7 +57,7 @@ function Products({ gridColumns = 4 }) {
   }
 
   return (
-    <div className="pt-25 pb-20 px-4 min-h-screen bg-[#0b1220]">
+    <div className="pt-25 pb-20 px-4 min-h-screen">
       <h2 className="text-2xl font-bold mb-4 text-white">🛍️ Products</h2>
 
       {query && (
@@ -80,7 +80,7 @@ function Products({ gridColumns = 4 }) {
       {products.length === 0 ? (
         <p className="text-gray-400 text-center">Loading products...</p>
       ) : (
-        <ProductList products={sorted} gridColumns={gridColumns} />
+          <ProductList products={sorted} gridColumns={gridColumns} />
       )}
     </div>
   );

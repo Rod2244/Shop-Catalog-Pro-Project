@@ -1,19 +1,144 @@
 [
-  { "name": "Monitor", "category": "Accessories", "price": 199.99, "rating": 4, "image": "/product-image/ProductImg1.jpg" },
-  { "name": "System Unit", "category": "Computers", "price": 799.9, "rating": 5, "image": "/product-image/ProductImg3.jpg" },
-  { "name": "Mouse", "category": "Accessories", "price": 29.99, "rating": 4, "image": "/product-image/ProductImg2.jpg" },
-  { "name": "Headset", "category": "Audio Gear", "price": 89.99, "rating": 2, "image": "/product-image/ProductImg4.jpg" },
-  { "name": "Keyboard", "category": "Accessories", "price": 49.99, "rating": 4, "image": "/product-image/ProductImg5.jpg" },
-  { "name": "Mouse Pad", "category": "Accessories", "price": 19.99, "rating": 4, "image": "/product-image/ProductImg6.jpg" },
-  { "name": "Webcam", "category": "Accessories", "price": 59.99, "rating": 3, "image": "/product-image/ProductImg7.jpg" },
-  { "name": "Speakers", "category": "Audio", "price": 79.99, "rating": 4, "image": "/product-image/ProductImg8.jpg" },
-  { "name": "Microphone", "category": "Audio", "price": 99.9, "rating": 4, "image": "/product-image/ProductImg9.jpg" },
-  { "name": "Cooling Pad", "category": "Accessories", "price": 39.99, "rating": 1, "image": "/product-image/ProductImg10.jpg" },
-  { "name": "USB Hub", "category": "Accessories", "price": 24.99, "rating": 4, "image": "/product-image/ProductImg11.jpg" },
-  { "name": "External HDD", "category": "Storage", "price": 129.99, "rating": 4, "image": "/product-image/ProductImg12.jpg" },
-  { "name": "Iphone 16 pro max", "category": "Mobile Devices", "price": 1199.0, "rating": 4, "image": "/product-image/ProductImg13.jpg" },
-  { "name": "PS5", "category": "Home Console", "price": 549.99, "rating": 5, "image": "/product-image/ProductImg14.jpg" },
-  { "name": "Nintendo Switch", "category": "Handheld Console", "price": 399.99, "rating": 4, "image": "/product-image/ProductImg15.jpg" },
-  { "name": "Pokemon Scarlet", "category": "Console Games", "price": 59.99, "rating": 3.5, "image": "/product-image/ProductImg16.jpg" },
-  { "name": "The Last of Us", "category": "Console Games", "price": 17.16, "rating": 2, "image": "/product-image/ProductImg17.jpg" }
+  { 
+    "id": 1, 
+    "name": "Acer Nitro 27” Full HD Gaming Monitor", 
+    "category": "Accessories", 
+    "price": 199.99, 
+    "rating": 4, 
+    "image": "/product-image/ProductImg1.jpg",
+    "description": "Experience vibrant visuals and smooth performance with the Acer Nitro 27” Full HD Gaming Monitor. Featuring a 1920×1080 IPS display, 165Hz refresh rate, and 1ms response time, it delivers crisp detail and lag-free gameplay. The slim bezel design suits multi-monitor setups, while AMD FreeSync™, blue light filter, and flicker reduction ensure comfortable, tear-free viewing. Perfect for gaming, editing, or everyday work."
+  },
+  { 
+    "id": 2, 
+    "name": "CyberGear Vortex GX System Unit", 
+    "category": "Computers", 
+    "price": 799.9, 
+    "rating": 5, 
+    "image": "/product-image/ProductImg3.jpg",
+    "description": "The CyberGear Vortex GX System Unit delivers top-tier performance and style with a 12th Gen Intel Core i7, 16GB DDR4 RAM, and 512GB NVMe SSD for fast multitasking and load times. Featuring an NVIDIA GeForce RTX 3060 for smooth, stunning visuals and an RGB tempered glass case with efficient cooling, it’s perfect for gaming, content creation, and professional work."
+  },
+  { 
+    "id": 3, 
+    "name": "Logitech G502 Gaming Mouse", 
+    "category": "Accessories", 
+    "price": 29.99, 
+    "rating": 4, 
+    "image": "/product-image/ProductImg2.jpg",
+    "description": "The Logitech G502 Gaming Mouse offers precision, speed, and customization for serious gamers. Featuring a 25K HERO sensor for ultra-accurate tracking, 11 programmable buttons, and adjustable weights, it adapts perfectly to your playstyle. With LIGHTSYNC RGB lighting and a durable, ergonomic design, the G502 delivers comfort and performance for both casual and competitive gaming."
+  },
+  { 
+    "id": 4, 
+    "name": "Razer BlackShark V2 Gaming Headset", 
+    "category": "Audio Gear", 
+    "price": 89.99, 
+    "rating": 2, 
+    "image": "/product-image/ProductImg4.jpg", 
+    "description": "The Razer BlackShark V2 Gaming Headset offers immersive sound and comfort for long gaming sessions. Featuring THX 7.1 Surround Sound, custom-tuned 50mm drivers, and a detachable noise-cancelling microphone, it delivers clear audio and communication. The lightweight design with memory foam ear cushions ensures comfort, while the advanced passive noise cancellation blocks out distractions, making it perfect for competitive gaming."
+  },
+  { 
+    "id": 5, 
+    "name": "CodeGear Mechanical Keyboard", 
+    "category": "Accessories", 
+    "price": 49.99, 
+    "rating": 4, 
+    "image": "/product-image/ProductImg5.jpg",
+    "description": "Elevate your typing and gaming experience with the CodeGear Mechanical Keyboard. Featuring high-precision mechanical switches, customizable RGB lighting, and durable keycaps, this keyboard delivers both speed and comfort. Its ergonomic design ensures extended comfort during long sessions, while programmable keys let you tailor every action to your workflow or gameplay. Built for performance, reliability, and style, the CodeGear Mechanical Keyboard is the ultimate tool for gamers, coders, and enthusiasts alike."
+  },
+  { 
+    "id": 6, 
+    "name": "Pokemon: Gengar Mouse Pad", 
+    "category": "Accessories", 
+    "price": 19.99, 
+    "rating": 4, 
+    "image": "/product-image/ProductImg6.jpg",
+    "description": "This Gengar-themed mouse pad is a functional and stylish accessory for any Pokémon fan's desk. It features vibrant, high-quality Gengar artwork on a smooth, low-friction surface for precise mouse control. The pad includes a non-slip rubber base and is available in various sizes, including extended desk mat versions. It's an ideal combination of comfort, performance, and eye-catching Pokémon flair."
+  },
+  { 
+    "id": 7, 
+    "name": "Webcam", 
+    "category": "Accessories", 
+    "price": 59.99, 
+    "rating": 3, 
+    "image": "/product-image/ProductImg7.jpg" 
+  },
+  { 
+    "id": 8, 
+    "name": "Speakers", 
+    "category": "Audio", 
+    "price": 79.99, 
+    "rating": 4, 
+    "image": "/product-image/ProductImg8.jpg" 
+  },
+  { 
+    "id": 9, 
+    "name": "Microphone", 
+    "category": "Audio", 
+    "price": 99.9, 
+    "rating": 4, 
+    "image": "/product-image/ProductImg9.jpg" 
+  },
+  { 
+    "id": 10, 
+    "name": "Cooling Pad", 
+    "category": "Accessories", 
+    "price": 39.99, 
+    "rating": 1, 
+    "image": "/product-image/ProductImg10.jpg" 
+  },
+  { 
+    "id": 11, 
+    "name": "USB Hub", 
+    "category": "Accessories", 
+    "price": 24.99, 
+    "rating": 4, 
+    "image": "/product-image/ProductImg11.jpg" 
+  },
+  { 
+    "id": 12, 
+    "name": "External HDD", 
+    "category": "Storage", 
+    "price": 129.99, 
+    "rating": 4, 
+    "image": "/product-image/ProductImg12.jpg" 
+  },
+  { 
+    "id": 13, 
+    "name": "Iphone 16 pro max", 
+    "category": "Mobile Devices", 
+    "price": 1199.0, 
+    "rating": 4, 
+    "image": "/product-image/ProductImg13.jpg" 
+  },
+  { 
+    "id": 14, 
+    "name": "PS5", 
+    "category": "Home Console", 
+    "price": 549.99, 
+    "rating": 5, 
+    "image": "/product-image/ProductImg14.jpg" 
+  },
+  { 
+    "id": 15, 
+    "name": "Nintendo Switch", 
+    "category": "Handheld Console", 
+    "price": 399.99, 
+    "rating": 4, 
+    "image": "/product-image/ProductImg15.jpg" 
+  },
+  { 
+    "id": 16, 
+    "name": "Pokemon Scarlet", 
+    "category": "Console Games", 
+    "price": 59.99, 
+    "rating": 3.5, 
+    "image": "/product-image/ProductImg16.jpg" 
+  },
+  { 
+    "id": 17, 
+    "name": "The Last of Us", 
+    "category": "Console Games", 
+    "price": 17.16, 
+    "rating": 2, 
+    "image": "/product-image/ProductImg17.jpg" 
+  }
 ]
