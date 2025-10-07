@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div>
       {/* === Hero Section === */}
-        <div className="relative h-[500px] flex items-center justify-center bg-gradient-to-b from-gray-900 to-black overflow-hidden text-center px-6 rounded-3xl">
+        <div className="relative h-[500px] flex items-center justify-center bg-gradient-to-b from-gray-900 to-black overflow-hidden text-center px-6 rounded-3xl pt-20">
             {/* === Animated Background Glow === */}
             <div className="absolute inset-0">
             <div className="absolute top-0 left-1/3 w-72 h-72 bg-purple-500/30 blur-[100px] rounded-full animate-pulse"></div>
