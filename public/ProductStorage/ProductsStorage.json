@@ -1,0 +1,19 @@
+[
+  { "name": "Monitor", "category": "Accessories", "price": 199.99, "rating": 4, "image": "/product-image/ProductImg1.jpg" },
+  { "name": "System Unit", "category": "Computers", "price": 799.9, "rating": 5, "image": "/product-image/ProductImg3.jpg" },
+  { "name": "Mouse", "category": "Accessories", "price": 29.99, "rating": 4, "image": "/product-image/ProductImg2.jpg" },
+  { "name": "Headset", "category": "Audio Gear", "price": 89.99, "rating": 2, "image": "/product-image/ProductImg4.jpg" },
+  { "name": "Keyboard", "category": "Accessories", "price": 49.99, "rating": 4, "image": "/product-image/ProductImg5.jpg" },
+  { "name": "Mouse Pad", "category": "Accessories", "price": 19.99, "rating": 4, "image": "/product-image/ProductImg6.jpg" },
+  { "name": "Webcam", "category": "Accessories", "price": 59.99, "rating": 3, "image": "/product-image/ProductImg7.jpg" },
+  { "name": "Speakers", "category": "Audio", "price": 79.99, "rating": 4, "image": "/product-image/ProductImg8.jpg" },
+  { "name": "Microphone", "category": "Audio", "price": 99.9, "rating": 4, "image": "/product-image/ProductImg9.jpg" },
+  { "name": "Cooling Pad", "category": "Accessories", "price": 39.99, "rating": 1, "image": "/product-image/ProductImg10.jpg" },
+  { "name": "USB Hub", "category": "Accessories", "price": 24.99, "rating": 4, "image": "/product-image/ProductImg11.jpg" },
+  { "name": "External HDD", "category": "Storage", "price": 129.99, "rating": 4, "image": "/product-image/ProductImg12.jpg" },
+  { "name": "Iphone 16 pro max", "category": "Mobile Devices", "price": 1199.0, "rating": 4, "image": "/product-image/ProductImg13.jpg" },
+  { "name": "PS5", "category": "Home Console", "price": 549.99, "rating": 5, "image": "/product-image/ProductImg14.jpg" },
+  { "name": "Nintendo Switch", "category": "Handheld Console", "price": 399.99, "rating": 4, "image": "/product-image/ProductImg15.jpg" },
+  { "name": "Pokemon Scarlet", "category": "Console Games", "price": 59.99, "rating": 3.5, "image": "/product-image/ProductImg16.jpg" },
+  { "name": "The Last of Us", "category": "Console Games", "price": 17.16, "rating": 2, "image": "/product-image/ProductImg17.jpg" }
+]

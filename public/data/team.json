@@ -1,0 +1,26 @@
+[
+  {
+    "img": "/teamimage/team3.jpg",
+    "name": "John Zander Remiliete",
+    "role": "Lead UI/UX",
+    "description": "John leads CyberGear with a vision for innovation and quality. With over 10 years in tech retail, he ensures every product exceeds expectations."
+  },
+  {
+    "img": "/teamimage/team2.jpg",
+    "name": "Alexandra Steffi Marie Madrazo",
+    "role": "Assist. UI/UX",
+    "description": "Steffi curates and manages our catalog, ensuring only the best products make it to our customers. Her design sense shapes the CyberGear experience."
+  },
+  {
+    "img": "/teamimage/team1.jpg",
+    "name": "Rod Angelo Benedict Ignacio",
+    "role": "Lead Developer",
+    "description": "Rod is the mastermind behind CyberGear’s tech infrastructure. From performance optimization to UX, he keeps everything running flawlessly."
+  },
+  {
+    "img": "/teamimage/team4.jpg",
+    "name": "Ira Sarmiento",
+    "role": "Assist. Developer",
+    "description": "Ira is a dedicated Assistant Developer who supports the core development team in building, debugging, and optimizing features."
+  }
+]

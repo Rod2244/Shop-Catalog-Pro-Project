@@ -16,7 +16,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-gray-900 text-white p-4 shadow-lg">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-gray-900 text-white p-3 pb-2 shadow-lg">
       {/* Top bar: Hamburger + Logo + Search */}
       <div className="flex items-center justify-between sm:justify-start gap-3">
         {/* Hamburger (left on mobile) */}

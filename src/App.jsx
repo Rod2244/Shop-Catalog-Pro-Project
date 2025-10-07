@@ -12,7 +12,7 @@ function App() {
     <Router>
       <div className="flex flex-col  min-h-screen bg-gradient-to-b from-[#0f0f1f] via-[#1a1a40] to-[#2b0040]">
         <Navbar /> 
-          <div className="flex-grow p-6">
+          <div className="flex-grow p-3">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/cart" element={<Cart discountCode="SAVE10" />} />

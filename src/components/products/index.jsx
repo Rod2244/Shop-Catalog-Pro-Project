@@ -1,51 +1,36 @@
-// src/components/Products/index.jsx
 import { useSearchParams } from "react-router-dom";
+import { useEffect, useState } from "react";
 import ProductFilters from "./ProductFilters";
 import ProductList from "./ProductList";
 
 function Products({ gridColumns = 4 }) {
   const [params, setParams] = useSearchParams();
+  const [products, setProducts] = useState([]);
+  const [categories, setCategories] = useState(["All"]);
+
+  useEffect(() => {
+    fetch("/ProductStorage/ProductsStorage.json")
+      .then((res) => res.json())
+      .then((data) => setProducts(data))
+      .catch((err) => console.error("Failed to load products:", err));
+
+      fetch("/Categories/Categories.json")
+      .then((res) => res.json())
+      .then((data) => setCategories(data))
+      .catch((err) => console.error("Failed to load products:", err));
+  }, []);
+
   const query = params.get("q")?.toLowerCase() || "";
   const selectedCategory = params.get("cat") || "All";
   const minPrice = parseFloat(params.get("min")) || 0;
   const maxPrice = parseFloat(params.get("max")) || Infinity;
   const sortOption = params.get("sort") || "";
 
-  const products = [
-    { name: "Monitor", category: "Accessories",price: 199.99 , rating: 4, image: "/product-image/ProductImg1.jpg"},
-    { name: "System Unit", category: "Computers", price: 799.9, rating: 5 },
-    { name: "Mouse", category: "Accessories", price: 29.99, rating: 4, image: "/product-image/ProductImg2.jpg" },
-    { name: "Headset", category: "Audio Gear", price: 89.99, rating: 2 },
-    { name: "Keyboard", category: "Accessories", price: 49.99, rating: 4 },
-    { name: "Mouse Pad", category: "Accessories", price: 19.99, rating: 4 },
-    { name: "Webcam", category: "Accessories", price: 59.99, rating: 3 },
-    { name: "Speakers", category: "Audio", price: 79.99, rating: 4 },
-    { name: "Microphone", category: "Audio", price: 99.9, rating: 4 },
-    { name: "Cooling Pad", category: "Accessories", price: 39.99, rating: 1 },
-    { name: "USB Hub", category: "Accessories", price: 24.99, rating: 4 },
-    { name: "External HDD", category: "Storage", price: 129.99, rating: 4 },
-    { name: "Iphone 16 pro max", category: "Mobile Devices", price: 1199.00, rating: 4 },
-    { name: "PS5", category: "Home Console", price: 549.99, rating: 5 },
-    { name: "Nintendo Switch", category: "Handheld Console", price: 399.99, rating: 4 },
-    { name: "Pokemon Scarlet", category: "Console Games", price: 59.99, rating: 3.5 },
-    { name: "The Last of Us", category: "Console Games", price: 17.16, rating: 2 },
-  ];
-  
-  const categories = [
-    "All",
-    "Computers",
-    "Accessories",
-    "Audio Gear",
-    "Storage",
-    "Mobile Devices",
-    "Home Console",
-    "Handheld Console",
-    "Console Games",
-  ];
-
   // Filtering
   const filtered = products.filter((item) => {
-    const matchesQuery = item.name.toLowerCase().includes(query);
+    const matchesQuery =
+      item.name.toLowerCase().includes(query) ||
+      item.category.toLowerCase().includes(query);
     const matchesCategory =
       selectedCategory === "All" || item.category === selectedCategory;
     const matchesPrice = item.price >= minPrice && item.price <= maxPrice;
@@ -71,10 +56,8 @@ function Products({ gridColumns = 4 }) {
       break;
   }
 
-  
-
   return (
-    <div>
+    <div className="pt-25 pb-20 px-4 min-h-screen bg-[#0b1220]">
       <h2 className="text-2xl font-bold mb-4 text-white">🛍️ Products</h2>
 
       {query && (
@@ -93,7 +76,12 @@ function Products({ gridColumns = 4 }) {
         sortOption={sortOption}
       />
 
-      <ProductList products={sorted} gridColumns={gridColumns} />
+      {/* Show loading state */}
+      {products.length === 0 ? (
+        <p className="text-gray-400 text-center">Loading products...</p>
+      ) : (
+        <ProductList products={sorted} gridColumns={gridColumns} />
+      )}
     </div>
   );
 }
