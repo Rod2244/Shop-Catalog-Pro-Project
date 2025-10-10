@@ -31,7 +31,7 @@ const Home = () => {
             transition={{ duration: 1 }}
             className="relative z-10 bg-gray-900/70 border border-gray-700 backdrop-blur-lg shadow-2xl rounded-2xl p-10 max-w-3xl"
             >
-            <h1 className="text-5xl md:text-6xl font-extrabold mb-4 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 text-transparent bg-clip-text">
+            <h1 className="text-bold text-5xl md:text-6xl font-extrabold mb-4 bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 text-transparent bg-clip-text">
                 Welcome to CyberGear
             </h1>
             <p className="text-gray-400 mb-8 text-lg">
