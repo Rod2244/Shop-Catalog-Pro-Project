@@ -52,7 +52,7 @@ function ProductDetails() {
             <h2 className="text-3xl font-bold mb-3">{product.name}</h2>
             <p className="text-indigo-300 mb-2">{product.category}</p>
             <p className="text-xl font-semibold mb-2">${product.price}</p>
-            <p className="text-yellow-400 mb-4">⭐ {product.rating}</p>
+            <p className="text-yellow-400 mb-4">⭐ {product.rating} Star</p>
             <p className="text-gray-300 mb-6">{product.description}</p>
           </div>
 
@@ -70,7 +70,7 @@ function ProductDetails() {
       {/* Tabs for Nested Routes */}
       <div className="max-w-4xl mx-auto mt-8 bg-gray-800 p-6 rounded-2xl shadow-lg">
         <div className="flex gap-6 border-b border-gray-600 pb-2">
-          <Link to="" className="hover:text-indigo-400">
+          <Link to="overview" className="hover:text-indigo-400">
             Overview
           </Link>
           <Link to="specs" className="hover:text-indigo-400">

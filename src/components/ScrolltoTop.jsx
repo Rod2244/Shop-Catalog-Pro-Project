@@ -5,7 +5,7 @@ function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-     const excludePattern = /^\/product\/[^/]+(\/specs)?$/i;
+     const excludePattern = /^\/product\/[^/]+(\/(specs|overview))?$/i;
 
     if (!excludePattern.test(pathname)) {
       window.scrollTo({ top: 0, behavior: "smooth" });

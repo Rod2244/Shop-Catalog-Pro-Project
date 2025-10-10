@@ -9,6 +9,7 @@ import NotFound from "./components/NotFound";
 import ScrollToTop from "./components/ScrolltoTop";
 import ProductDetails from "./components/ProductDetails";
 import ProductSpecs from "./components/ProductSpecs";
+import ProductOverview from "./components/ProductOverview";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             />
               <Route path="/product/:id" element={<ProductDetails />} >
                 <Route path="specs" element={<ProductSpecs />} />
+                <Route path="overview" element={<ProductOverview />} />
               </Route>
               <Route path="/about" element={<About />} />
               <Route path="*" element={<NotFound />} />

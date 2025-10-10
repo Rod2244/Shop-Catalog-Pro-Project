@@ -1,7 +1,7 @@
 import { useParams, Outlet, useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-function ProductSpecs() {
+function ProductOverview() {
   const { id } = useParams();
   const navigate = useNavigate();
   const location = useLocation();
@@ -19,14 +19,14 @@ function ProductSpecs() {
 
   if (!product) return <p className="text-gray-400 text-center mt-20">Loading...</p>;
 
-  const specsPath = `/products/${id}/specs`;
-  const isSpecsOpen = location.pathname === specsPath;
+  const overviewPath = `/products/${id}/overview`;
+  const isOverviewOpen = location.pathname === overviewPath;
 
-  const handleSpecsClick = () => {
-    if (isSpecsOpen) {
-      navigate(`/products/${id}`); // Close specs
+  const handleOverviewClick = () => {
+    if (isOverviewOpen) {
+      navigate(`/products/${id}`); // Close overview
     } else {
-      navigate(specsPath); // Open specs
+      navigate(overviewPath); // Open overview
     }
   };
 
@@ -40,15 +40,10 @@ function ProductSpecs() {
       </button>
 
       <div className="max-w-4xl mx-auto bg-gray-800 p-6 rounded-2xl shadow-lg">
-        <h3 className="text-xl font-semibold mb-3">Specifications</h3>
-          <ul className="list-disc pl-5 space-y-1">
-            <li>Processor: Intel Core i7 12th Gen</li>
-            <li>Graphics: NVIDIA RTX 3060</li>
-            <li>RAM: 16GB DDR4</li>
-            <li>Storage: 512GB NVMe SSD</li>
-            <li>Cooling: Dual ARGB fans</li>
-            <li>Warranty: 2 Years</li>
-          </ul>
+        <h3 className="text-xl font-semibold mb-3">Overview</h3>
+          <p className="text-gray-300 mb-4">
+            The Acer Nitro 27” Full HD Gaming Monitor delivers sharp visuals and smooth performance with its 165Hz refresh rate, 1ms response time, and IPS display. Its slim bezel design, adjustable stand, and eye protection features make it perfect for gaming, work, or entertainment.
+          </p>  
         {/* Tabs */}
         
 
@@ -61,5 +56,5 @@ function ProductSpecs() {
   );
 }
 
-export default ProductSpecs; 
+export default ProductOverview; 
 
