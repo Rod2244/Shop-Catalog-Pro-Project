@@ -58,7 +58,12 @@ function Products({ gridColumns = 4 }) {
 
   return (
     <div className="pt-25 pb-20 px-4 min-h-screen">
-      <h2 className="text-2xl font-bold mb-4 text-white">🛍️ Products</h2>
+      <h2 className="text-3xl mb-4">
+        <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 bg-clip-text text-transparent font-bold tracking-wide">
+          🛍️ Products
+        </span>
+      </h2>
+
 
       {query && (
         <p className="mb-2 text-white">

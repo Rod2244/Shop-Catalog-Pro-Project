@@ -1,7 +1,7 @@
 [
   { 
     "id": 1, 
-    "name": "Acer Nitro 27” Full HD Gaming Monitor", 
+    "name": "Acer Nitro 27” Full HD Monitor", 
     "category": "Accessories", 
     "price": 199.99, 
     "rating": 4, 
@@ -19,7 +19,7 @@
   },
   { 
     "id": 3, 
-    "name": "Logitech G502 Gaming Mouse", 
+    "name": "Logitech G502 Mouse", 
     "category": "Accessories", 
     "price": 29.99, 
     "rating": 4, 
@@ -28,7 +28,7 @@
   },
   { 
     "id": 4, 
-    "name": "Razer BlackShark V2 Gaming Headset", 
+    "name": "Razer BlackShark V2 Headset", 
     "category": "Audio Gear", 
     "price": 89.99, 
     "rating": 2, 

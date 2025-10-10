@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Cart from "./components/Cart";
+import Cart from "./cartContext/Cart";
 import Product from "./components/products";
 import About from "./components/About"
-import Navbar from "./components/Navbar"; 
+import Navbar from "./components/navbar/Navbar"; 
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import NotFound from "./components/NotFound";
@@ -31,7 +31,7 @@ function App() {
             />
               <Route path="/product/:id" element={<ProductDetails />} >
                 <Route path="specs" element={<ProductSpecs />} />
-                <Route path="overview" element={<ProductOverview />} />
+                <Route path="cart" element={<Cart discountCode="SAVE10" />} />
               </Route>
               <Route path="/about" element={<About />} />
               <Route path="*" element={<NotFound />} />
