@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import SuggestionList from "./SuggestionList";
 
-function SearchBar() {
+function SearchBar({ isMobileCompact = false, onSearchSubmit }) {
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState([]);
   const [products, setProducts] = useState([]);
@@ -26,6 +26,7 @@ function SearchBar() {
       navigate(`/products?q=${encodeURIComponent(query)}`);
       setQuery("");
       setSuggestions([]);
+      if (onSearchSubmit) onSearchSubmit(); // Close menu if provided
     }
   };
 
@@ -46,6 +47,7 @@ function SearchBar() {
     setQuery(value);
     navigate(`/products?q=${encodeURIComponent(value)}`);
     setSuggestions([]);
+    if (onSearchSubmit) onSearchSubmit(); // Close menu if provided
   };
 
   const handleClear = () => {
@@ -53,11 +55,30 @@ function SearchBar() {
     setSuggestions([]);
   };
 
+  // Compact mode for mobile (simple button)
+  if (isMobileCompact) {
+    return (
+      <button
+        onClick={() => {
+          navigate("/products"); // Navigate to products (or adjust to open full search)
+          if (onSearchSubmit) onSearchSubmit(); // Close mobile menu
+        }}
+        className="w-full flex items-center justify-center p-2 bg-gray-800 border border-gray-600 rounded-lg text-white hover:bg-gray-700 transition"
+      >
+        <span className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 text-transparent bg-clip-text font-semibold mr-2">
+          🔍
+        </span>
+        Search
+      </button>
+    );
+  }
+
+  // Full mode for desktop (original logic)
   return (
-    <div className="relative hidden sm:flex flex-col mt-5 w-80">
+    <div className="relative flex flex-col mt-5 w-full sm:w-80"> {/* Removed hidden sm:flex; responsive width */}
       <form
         onSubmit={handleSearch}
-        className="flex bg-gray-800 rounded-lg px-3 py-1 items-center"
+        className="flex bg-gray-800 rounded-lg px-3 py-1 sm:py-2 items-center"
       >
         <input
           type="text"
@@ -82,7 +103,7 @@ function SearchBar() {
 
         <button
           type="submit"
-          className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 text-transparent bg-clip-text font-semibold"
+          className="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-500 text-transparent bg-clip-text font-semibold ml-2"
         >
           🔍
         </button>

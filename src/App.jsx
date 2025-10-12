@@ -9,29 +9,28 @@ import NotFound from "./components/NotFound";
 import ScrollToTop from "./components/ScrolltoTop";
 import ProductDetails from "./components/ProductDetails";
 import ProductSpecs from "./components/ProductSpecs";
-import ProductOverview from "./components/ProductOverview";
+
 
 function App() {
   return (
-    <Router>
+    
       <div className="flex flex-col  min-h-screen bg-gradient-to-b from-[#0f0f1f] via-[#1a1a40] to-[#2b0040]">
         <ScrollToTop />
         <Navbar /> 
           <div className="flex-grow p-3">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/cart" element={<Cart discountCode="SAVE10" />} />
-              <Route
-              path="/products"
-              element={
-                <Product
-                  gridColumns={{ base: 1, sm: 2, md: 3, lg: 5 }}
-                />
-              }
-            />
+              <Route path="/cart" element={<Cart discountCodes={["SAVE10", "SAVE20", "HALFOFF"]} />} />
+              <Route path="/products"
+                element={
+                  <Product
+                    gridColumns={{ base: 1, sm: 2, md: 3, lg: 4, xl: 5, "2xl": 6 }}
+                  />
+                }
+              />
               <Route path="/product/:id" element={<ProductDetails />} >
                 <Route path="specs" element={<ProductSpecs />} />
-                <Route path="cart" element={<Cart discountCode="SAVE10" />} />
+                <Route path="cart" element={<Cart discountCodes={["SAVE10", "SAVE20", "HALFOFF"]} />} />
               </Route>
               <Route path="/about" element={<About />} />
               <Route path="*" element={<NotFound />} />
@@ -39,7 +38,7 @@ function App() {
           </div>
         <Footer />
       </div>
-    </Router>
+    
   );
 }
 

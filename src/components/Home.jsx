@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <div>
       {/* === Hero Section === */}
-        <div className="relative h-[500px] flex items-center justify-center bg-gradient-to-b from-gray-900 to-black overflow-hidden text-center px-6 rounded-3xl pt-20">
+        <div className="relative h-[500px] flex items-center justify-center bg-gradient-to-b from-gray-900 to-black overflow-hidden text-center px-6 rounded-3xl pt-0 mb-20 mx-4 md:mx-10 lg:mx-20">
             {/* === Animated Background Glow === */}
             <div className="absolute inset-0">
               <div className="absolute top-0 left-1/3 w-72 h-72 bg-purple-500/30 blur-[100px] rounded-full animate-pulse"></div>
@@ -54,11 +54,11 @@ const Home = () => {
             <p className="absolute bottom-10 right-10 animate-pulse">
                 00110001 00110010 00110011 01000011 01001111 01000100 01000101
             </p>
-            </div>
+          </div>
         </div>
 
       {/* === Category Section === */}
-      <section className="relative z-10 py-10 px-8">
+      <section className="relative z-10 py-10 px-8 pt-0 pb-20">
         <h2 className="text-center text-4xl font-bold mb-10 bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">
           Browse by Category
         </h2>

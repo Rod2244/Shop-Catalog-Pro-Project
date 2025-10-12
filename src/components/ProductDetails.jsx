@@ -8,7 +8,7 @@ function ProductDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [product, setProduct] = useState(null);
-  const { addToCart, cart } = useContext(CartContext); // 👈 use cart context
+  const { addToCart } = useContext(CartContext); // 👈 use cart context
 
   useEffect(() => {
     fetch("/ProductStorage/ProductsStorage.json")
@@ -21,18 +21,13 @@ function ProductDetails() {
   }, [id]);
 
   // 🧮 Update URL with cart count
-  useEffect(() => {
-    const count = cart.length;
-    const newUrl = new URL(window.location);
-    newUrl.searchParams.set("cart", count);
-    window.history.replaceState({}, "", newUrl);
-  }, [cart]);
+  
 
   if (!product)
     return <p className="text-gray-400 text-center mt-20">Loading...</p>;
 
   return (
-    <div className="pt-50 text-white px-6 py-10">
+    <div className="pt-10 text-white px-6 py-10">
       <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 bg-gray-800 p-8 rounded-2xl shadow-lg relative">
         <button
           onClick={() => navigate(-1)}
@@ -45,7 +40,7 @@ function ProductDetails() {
         <motion.img
           src={product.image}
           alt={product.name}
-          className="w-full h-80 object-cover rounded-xl"
+          className="w-full h-80 object-scale-down rounded-xl"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0 }}
@@ -73,9 +68,6 @@ function ProductDetails() {
 
       <div className="max-w-4xl mx-auto mt-8 bg-gray-800 p-6 rounded-2xl shadow-lg">
         <div className="flex gap-6 border-b border-gray-600 pb-2">
-          <Link to="overview" className="hover:text-indigo-400">
-            Overview
-          </Link>
           <Link to="specs" className="hover:text-indigo-400">
             Specs
           </Link>

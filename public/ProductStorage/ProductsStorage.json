@@ -6,7 +6,20 @@
     "price": 199.99, 
     "rating": 4, 
     "image": "/product-image/ProductImg1.jpg",
-    "description": "Experience vibrant visuals and smooth performance with the Acer Nitro 27” Full HD Gaming Monitor. Featuring a 1920×1080 IPS display, 165Hz refresh rate, and 1ms response time, it delivers crisp detail and lag-free gameplay. The slim bezel design suits multi-monitor setups, while AMD FreeSync™, blue light filter, and flicker reduction ensure comfortable, tear-free viewing. Perfect for gaming, editing, or everyday work."
+    "description": "Experience vibrant visuals and smooth performance with the Acer Nitro 27” Full HD Gaming Monitor. Featuring a 1920×1080 IPS display, 165Hz refresh rate, and 1ms response time, it delivers crisp detail and lag-free gameplay. The slim bezel design suits multi-monitor setups, while AMD FreeSync™, blue light filter, and flicker reduction ensure comfortable, tear-free viewing. Perfect for gaming, editing, or everyday work.",
+    "specs": {
+      "Screen Size": "27 inches",
+      "Resolution": "1920 x 1080 (Full HD)",
+      "Panel Type": "IPS",
+      "Refresh Rate": "165Hz",
+      "Response Time": "1ms (VRB)",
+      "Brightness": "300 nits",
+      "Contrast Ratio": "1000:1",
+      "Color Support": "16.7 million colors",
+      "Viewing Angles": "178° horizontal / 178° vertical",
+      "Connectivity": "HDMI, DisplayPort, Audio Out",
+      "Features": "AMD FreeSync™, Blue Light Filter, Flicker-less Technology"
+    }
   },
   { 
     "id": 2, 
@@ -15,16 +28,37 @@
     "price": 799.9, 
     "rating": 5, 
     "image": "/product-image/ProductImg3.jpg",
-    "description": "The CyberGear Vortex GX System Unit delivers top-tier performance and style with a 12th Gen Intel Core i7, 16GB DDR4 RAM, and 512GB NVMe SSD for fast multitasking and load times. Featuring an NVIDIA GeForce RTX 3060 for smooth, stunning visuals and an RGB tempered glass case with efficient cooling, it’s perfect for gaming, content creation, and professional work."
+    "description": "The CyberGear Vortex GX System Unit delivers top-tier performance and style with a 12th Gen Intel Core i7, 16GB DDR4 RAM, and 512GB NVMe SSD for fast multitasking and load times. Featuring an NVIDIA GeForce RTX 3060 for smooth, stunning visuals and an RGB tempered glass case with efficient cooling, it’s perfect for gaming, content creation, and professional work.",
+    "specs": {
+      "Processor": "Intel Core i7-12700F",
+      "RAM": "16GB DDR4",
+      "Storage": "512GB NVMe SSD",
+      "Graphics Card": "NVIDIA GeForce RTX 3060 12GB",
+      "Motherboard": "ASUS PRIME B660M-A D4",
+      "Power Supply": "600W 80 Plus Bronze",
+      "Cooling": "RGB Air Cooling System",
+      "Operating System": "Windows 11 Home",
+      "Connectivity": "Wi-Fi 6, Bluetooth 5.0, Multiple USB Ports, HDMI, DisplayPort"
+    }
   },
   { 
     "id": 3, 
-    "name": "Logitech G502 Mouse", 
+    "name": "Logitech G502 Gaming Mouse", 
     "category": "Accessories", 
     "price": 29.99, 
     "rating": 4, 
     "image": "/product-image/ProductImg2.jpg",
-    "description": "The Logitech G502 Gaming Mouse offers precision, speed, and customization for serious gamers. Featuring a 25K HERO sensor for ultra-accurate tracking, 11 programmable buttons, and adjustable weights, it adapts perfectly to your playstyle. With LIGHTSYNC RGB lighting and a durable, ergonomic design, the G502 delivers comfort and performance for both casual and competitive gaming."
+    "description": "The Logitech G502 Gaming Mouse offers precision, speed, and customization for serious gamers. Featuring a 25K HERO sensor for ultra-accurate tracking, 11 programmable buttons, and adjustable weights, it adapts perfectly to your playstyle. With LIGHTSYNC RGB lighting and a durable, ergonomic design, the G502 delivers comfort and performance for both casual and competitive gaming.",
+    "specs": {
+      "Sensor": "HERO 25K",
+      "DPI Range": "100 - 25,600 DPI",
+      "Buttons": "11 Programmable Buttons",
+      "Weight": "Adjustable (Up to 18g)",
+      "Lighting": "LIGHTSYNC RGB",
+      "Connectivity": "Wired (USB)",
+      "Polling Rate": "1000Hz",
+      "Compatibility": "Windows, macOS"
+    }
   },
   { 
     "id": 4, 
@@ -33,7 +67,16 @@
     "price": 89.99, 
     "rating": 2, 
     "image": "/product-image/ProductImg4.jpg", 
-    "description": "The Razer BlackShark V2 Gaming Headset offers immersive sound and comfort for long gaming sessions. Featuring THX 7.1 Surround Sound, custom-tuned 50mm drivers, and a detachable noise-cancelling microphone, it delivers clear audio and communication. The lightweight design with memory foam ear cushions ensures comfort, while the advanced passive noise cancellation blocks out distractions, making it perfect for competitive gaming."
+    "description": "The Razer BlackShark V2 Gaming Headset offers immersive sound and comfort for long gaming sessions. Featuring THX 7.1 Surround Sound, custom-tuned 50mm drivers, and a detachable noise-cancelling microphone, it delivers clear audio and communication. The lightweight design with memory foam ear cushions ensures comfort, while the advanced passive noise cancellation blocks out distractions, making it perfect for competitive gaming.",
+    "specs": {
+      "Driver Size": "50mm",
+      "Frequency Response": "12Hz - 28kHz",
+      "Impedance": "32 Ohms",
+      "Sensitivity": "100dB",
+      "Microphone": "Detachable, Noise-Cancelling",
+      "Connectivity": "3.5mm Audio Jack, USB Sound Card",
+      "Compatibility": "PC, Mac, PS4, Xbox One, Nintendo Switch"
+    }
   },
   { 
     "id": 5, 
@@ -42,7 +85,17 @@
     "price": 49.99, 
     "rating": 4, 
     "image": "/product-image/ProductImg5.jpg",
-    "description": "Elevate your typing and gaming experience with the CodeGear Mechanical Keyboard. Featuring high-precision mechanical switches, customizable RGB lighting, and durable keycaps, this keyboard delivers both speed and comfort. Its ergonomic design ensures extended comfort during long sessions, while programmable keys let you tailor every action to your workflow or gameplay. Built for performance, reliability, and style, the CodeGear Mechanical Keyboard is the ultimate tool for gamers, coders, and enthusiasts alike."
+    "description": "Elevate your typing and gaming experience with the CodeGear Mechanical Keyboard. Featuring high-precision mechanical switches, customizable RGB lighting, and durable keycaps, this keyboard delivers both speed and comfort. Its ergonomic design ensures extended comfort during long sessions, while programmable keys let you tailor every action to your workflow or gameplay. Built for performance, reliability, and style, the CodeGear Mechanical Keyboard is the ultimate tool for gamers, coders, and enthusiasts alike.",
+    "specs": {
+      "Switch Type": "Mechanical (various options)",
+      "Key Rollover": "N-Key Rollover",
+      "Backlighting": "RGB Customizable",
+      "Keycaps": "Durable PBT",
+      "Connectivity": "Wired USB",
+      "Dimensions": "14.2 x 5.1 x 1.5 inches",
+      "Weight": "2.2 lbs",
+      "Compatibility": "Windows, macOS"
+    }
   },
   { 
     "id": 6, 
@@ -51,31 +104,60 @@
     "price": 19.99, 
     "rating": 4, 
     "image": "/product-image/ProductImg6.jpg",
-    "description": "This Gengar-themed mouse pad is a functional and stylish accessory for any Pokémon fan's desk. It features vibrant, high-quality Gengar artwork on a smooth, low-friction surface for precise mouse control. The pad includes a non-slip rubber base and is available in various sizes, including extended desk mat versions. It's an ideal combination of comfort, performance, and eye-catching Pokémon flair."
+    "description": "This Gengar-themed mouse pad is a functional and stylish accessory for any Pokémon fan's desk. It features vibrant, high-quality Gengar artwork on a smooth, low-friction surface for precise mouse control. The pad includes a non-slip rubber base and is available in various sizes, including extended desk mat versions. It's an ideal combination of comfort, performance, and eye-catching Pokémon flair.",
+    "specs": {
+      "Material": "Cloth Surface with Rubber Base",
+      "Dimensions": "Available in multiple sizes (e.g., 9.8 x 7.9 inches, 31.5 x 11.8 inches)",
+      "Thickness": "3mm",
+      "Design": "High-resolution Gengar artwork",
+      "Features": "Non-slip base, stitched edges for durability",
+      "Compatibility": "Works with all mouse types (optical, laser)"
+    }
   },
   { 
     "id": 7, 
-    "name": "Webcam", 
+    "name": "C90 Pro Webcam", 
     "category": "Accessories", 
     "price": 59.99, 
     "rating": 3, 
-    "image": "/product-image/ProductImg7.jpg" 
+    "image": "/product-image/ProductImg7.jpg",
+    "description": "A high-definition webcam designed for clear and stable video calls, streaming, and online meetings. It delivers sharp 1080p resolution, autofocus, and built-in microphone for crisp audio. Its plug-and-play setup makes it compatible with most laptops, PCs, and conferencing apps. Ideal for remote work, online learning, or live streaming."
   },
   { 
     "id": 8, 
-    "name": "Speakers", 
+    "name": "Opkall Speakers", 
     "category": "Audio Gear", 
     "price": 79.99, 
     "rating": 4, 
-    "image": "/product-image/ProductImg8.jpg" 
+    "image": "/product-image/ProductImg8.jpg",
+    "description": "The Opkall Speakers deliver high-quality audio with deep bass and clear treble, making them perfect for music, movies, and gaming. Their sleek design fits seamlessly into any setup, while Bluetooth connectivity allows for easy pairing with devices. With built-in controls and a compact form factor, these speakers are both stylish and functional.",
+    "specs": {
+      "Output Power": "20W RMS",
+      "Frequency Response": "60Hz - 20kHz",
+      "Connectivity": "Bluetooth 5.0, AUX, USB",
+      "Battery Life": "Up to 10 hours",
+      "Dimensions": "6.5 x 3.5 x 3.5 inches",
+      "Weight": "1.5 lbs"
+    }
   },
   { 
     "id": 9, 
-    "name": "Microphone", 
+    "name": "Razer Microphone", 
     "category": "Audio", 
     "price": 99.9, 
     "rating": 4, 
-    "image": "/product-image/ProductImg9.jpg" 
+    "image": "/product-image/ProductImg9.jpg",
+    "description": "The Razer Microphone is a high-quality USB microphone designed for gamers and streamers. It features a cardioid pickup pattern for clear voice capture, customizable RGB lighting, and a built-in pop filter to reduce unwanted noise. With its plug-and-play setup, it's compatible with most devices and software, making it easy to use for any streaming or recording setup.",
+    "specs": {
+      "Type": "USB Condenser Microphone",
+      "Pickup Pattern": "Cardioid",
+      "Frequency Response": "20Hz - 20kHz",
+      "Sample Rate": "16-bit/48kHz",
+      "Connectivity": "USB 2.0",
+      "Compatibility": "Windows, macOS",
+      "Dimensions": "4.7 x 4.7 x 9.8 inches",
+      "Weight": "1.5 lbs"
+    }
   },
   { 
     "id": 10, 
@@ -83,7 +165,18 @@
     "category": "Accessories", 
     "price": 39.99, 
     "rating": 1, 
-    "image": "/product-image/ProductImg10.jpg" 
+    "image": "/product-image/ProductImg10.jpg",
+    "description": "The Cooling Pad is designed to keep your laptop or gaming console cool during intense use. With its ergonomic design and adjustable fan speeds, it provides optimal airflow and comfort. The pad is lightweight and portable, making it easy to use at home or on the go.",
+    "specs": {
+      "Fan Size": "120mm",
+      "Fan Speed": "Adjustable (800-1500 RPM)",
+      "Cooling Method": "Active Cooling with LED Fans",
+      "Material": "Aluminum Mesh Surface",
+      "Dimensions": "15.7 x 11.8 x 1.5 inches",
+      "Weight": "1.2 lbs",
+      "Compatibility": "Fits laptops up to 17 inches",
+      "Connectivity": "USB Powered"
+    }
   },
   { 
     "id": 11, 
@@ -91,15 +184,35 @@
     "category": "Accessories", 
     "price": 24.99, 
     "rating": 4, 
-    "image": "/product-image/ProductImg11.jpg" 
+    "image": "/product-image/ProductImg11.jpg",
+    "description": "The USB Hub is a versatile accessory that expands your device's connectivity options. With multiple USB ports, it allows you to connect various peripherals such as keyboards, mice, and external drives simultaneously. Its compact design makes it easy to carry, while plug-and-play functionality ensures quick and hassle-free setup.",
+    "specs": {
+      "Ports": "4 x USB 3.0, 1 x USB-C",
+      "Data Transfer Rate": "Up to 5Gbps",
+      "Power Supply": "Bus-Powered",
+      "Compatibility": "Windows, macOS, Linux",
+      "Dimensions": "4.5 x 2.5 x 1 inches",
+      "Weight": "0.2 lbs",
+      "Material": "Aluminum Alloy"
+    }
   },
   { 
     "id": 12, 
-    "name": "External HDD", 
+    "name": "Adata External HDD", 
     "category": "Storage", 
     "price": 129.99, 
     "rating": 4, 
-    "image": "/product-image/ProductImg12.jpg" 
+    "image": "/product-image/ProductImg12.jpg",
+    "description": "The Adata External HDD offers high-capacity storage in a portable design, making it perfect for backing up important files or expanding your device's storage. With USB 3.0 connectivity, it provides fast data transfer speeds and is compatible with both Windows and Mac systems. Its durable casing ensures that your data is protected on the go.",
+    "specs": {
+      "Capacity": "2TB",
+      "Interface": "USB 3.0",
+      "Data Transfer Rate": "Up to 5Gbps",
+      "Compatibility": "Windows, macOS",
+      "Dimensions": "4.6 x 3.1 x 0.6 inches",
+      "Weight": "0.4 lbs",
+      "Material": "Plastic with Shock-Resistant Design"
+    }
   },
   { 
     "id": 13, 
@@ -107,7 +220,20 @@
     "category": "Mobile Devices", 
     "price": 1199.0, 
     "rating": 4, 
-    "image": "/product-image/ProductImg13.jpg" 
+    "image": "/product-image/ProductImg13.jpg",
+    "description": "The iPhone 16 Pro Max is Apple's latest flagship smartphone, featuring a stunning 6.7-inch Super Retina XDR display, A16 Bionic chip for lightning-fast performance, and an advanced camera system with ProRAW and ProRes video capabilities. With 5G support, improved battery life, and a sleek design, it's the ultimate device for users who demand the best.",
+    "specs": {
+      "Display": "6.7-inch Super Retina XDR",
+      "Processor": "A16 Bionic chip",
+      "Storage Options": "128GB, 256GB, 512GB, 1TB",
+      "Camera System": "Triple 12MP cameras with ProRAW and ProRes",
+      "Front Camera": "12MP TrueDepth",
+      "Battery Life": "Up to 28 hours talk time",
+      "Operating System": "iOS 16",
+      "Connectivity": "5G, Wi-Fi 6, Bluetooth 5.0",
+      "Dimensions": "6.33 x 3.07 x 0.32 inches",
+      "Weight": "8.03 ounces"
+    }
   },
   { 
     "id": 14, 
@@ -115,7 +241,20 @@
     "category": "Home Console", 
     "price": 549.99, 
     "rating": 5, 
-    "image": "/product-image/ProductImg14.jpg" 
+    "image": "/product-image/ProductImg14.jpg",
+    "description": "The PlayStation 5 (PS5) is Sony's latest home gaming console, offering cutting-edge performance with a custom SSD for ultra-fast load times, a powerful GPU for stunning graphics, and a new DualSense controller with haptic feedback and adaptive triggers. It supports 4K gaming, ray tracing, and a vast library of games, making it a must-have for gamers seeking an immersive experience.",
+    "specs": {
+      "Processor": "Custom AMD Zen 2, 8 cores at 3.5GHz",
+      "GPU": "Custom RDNA 2, 10.28 TFLOPS",
+      "Memory": "16GB GDDR6",
+      "Storage": "825GB Custom NVMe SSD",
+      "Optical Drive": "Ultra HD Blu-ray (66G/100G) ~10xCAV",
+      "Video Output": "4K UHD, HDR",
+      "Audio": "Tempest 3D AudioTech",
+      "Connectivity": "Wi-Fi 6, Bluetooth 5.1, USB Type-C, USB Type-A",
+      "Dimensions": "15.4 x 10.2 x 4.1 inches",
+      "Weight": "9.9 lbs"
+    } 
   },
   { 
     "id": 15, 
@@ -123,7 +262,19 @@
     "category": "Handheld Console", 
     "price": 399.99, 
     "rating": 4, 
-    "image": "/product-image/ProductImg15.jpg" 
+    "image": "/product-image/ProductImg15.jpg",
+    "description": "The Nintendo Switch is a versatile gaming console that can be used as a handheld device or connected to a TV for a traditional gaming experience. It features a 6.2-inch touchscreen, detachable Joy-Con controllers, and access to a vast library of games, including popular titles like The Legend of Zelda: Breath of the Wild and Animal Crossing: New Horizons. With its unique hybrid design, the Switch offers flexibility and fun for gamers of all ages.",
+    "specs": {
+      "Display": "6.2-inch LCD touchscreen",
+      "Resolution": "1280 x 720 (handheld mode), up to 1080p (TV mode)",
+      "Processor": "NVIDIA Custom Tegra",
+      "Storage": "32GB internal, expandable via microSD",
+      "Battery Life": "4.5 to 9 hours depending on usage",
+      "Connectivity": "Wi-Fi, Bluetooth 4.1, USB Type-C",
+      "Controllers": "Detachable Joy-Con controllers",
+      "Dimensions": "9.4 x 4 x 0.55 inches",
+      "Weight": "0.88 lbs (with Joy-Cons attached)"
+    } 
   },
   { 
     "id": 16, 
@@ -131,7 +282,17 @@
     "category": "Console Games", 
     "price": 59.99, 
     "rating": 3.5, 
-    "image": "/product-image/ProductImg16.jpg" 
+    "image": "/product-image/ProductImg16.jpg",
+    "description": "Pokémon Scarlet is an exciting addition to the Pokémon series, offering players a new adventure in a vibrant open-world setting. With new Pokémon to discover, innovative gameplay mechanics, and a captivating storyline, it provides an immersive experience for both new and returning players. The game features stunning graphics, dynamic weather systems, and multiplayer options, making it a must-play for fans of the franchise.",
+    "specs": {
+      "Platform": "Nintendo Switch",
+      "Genre": "Role-Playing Game (RPG)",
+      "Release Date": "November 18, 2022",
+      "Developer": "Game Freak",
+      "Publisher": "Nintendo, The Pokémon Company",
+      "Game Modes": "Single-player, Multiplayer",
+      "Features": "Open-world exploration, New Pokémon species, Dynamic weather system"
+    } 
   },
   { 
     "id": 17, 
@@ -139,6 +300,36 @@
     "category": "Console Games", 
     "price": 17.16, 
     "rating": 2, 
-    "image": "/product-image/ProductImg17.jpg" 
+    "image": "/product-image/ProductImg17.jpg",
+    "description": "The Last of Us is a critically acclaimed action-adventure game that follows the journey of Joel and Ellie in a post-apocalyptic world. With its gripping narrative, emotional depth, and intense gameplay, it offers a unique experience that explores themes of survival, trust, and humanity. The game features stunning visuals, realistic character animations, and a hauntingly beautiful soundtrack, making it a standout title in the gaming industry.",
+    "specs": {
+      "Platform": "PlayStation 4, PlayStation 5",
+      "Genre": "Action-Adventure",
+      "Release Date": "June 14, 2013 (PS3), July 29, 2014 (PS4), September 2, 2022 (PS5 Remake)",
+      "Developer": "Naughty Dog",
+      "Publisher": "Sony Computer Entertainment",
+      "Game Modes": "Single-player, Multiplayer (Factions)",
+      "Features": "Narrative-driven gameplay, Stealth mechanics, Crafting system"
+    }
+  },
+  { 
+    "id": 18, 
+    "name": "Steam Deck", 
+    "category": "Handheld Console", 
+    "price": 399.99, 
+    "rating": 4, 
+    "image": "/product-image/ProductImg18.jpg",
+    "description": "The Steam Deck is a powerful handheld gaming device developed by Valve, designed to run PC games from the Steam library. It features a custom AMD APU, a 7-inch touchscreen display, and a control layout similar to traditional game consoles. With its ability to run a full Linux OS and access to the Steam store, it offers gamers the flexibility to play their favorite titles on the go.",
+    "specs": {
+      "Processor": "Custom AMD APU (Zen 2 + RDNA 2)",
+      "Display": "7-inch touchscreen, 1280 x 800 resolution",
+      "Storage Options": "64GB eMMC, 256GB NVMe SSD, 512GB NVMe SSD",
+      "RAM": "16GB LPDDR5",
+      "Battery Life": "2 to 8 hours depending on usage",
+      "Operating System": "SteamOS 3.0 (Linux-based)",
+      "Connectivity": "Wi-Fi, Bluetooth 5.0, USB-C with DisplayPort 1.4",
+      "Dimensions": "11.7 x 4.6 x 1.9 inches",
+      "Weight": "1.47 lbs"
+    }
   }
 ]

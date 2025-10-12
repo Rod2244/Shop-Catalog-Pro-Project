@@ -1,5 +1,6 @@
 import { useParams, Outlet, useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { ArrowLeft } from "lucide-react";
 
 function ProductSpecs() {
   const { id } = useParams();
@@ -9,51 +10,61 @@ function ProductSpecs() {
 
   useEffect(() => {
     fetch("/ProductStorage/ProductsStorage.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const found = data.find((p) => p.id.toString() === id);
-        setProduct(found);
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        return res.json();
       })
-      .catch((err) => console.error("Failed to load product:", err));
+      .then((data) => {
+        if (!Array.isArray(data)) {
+          console.error("Fetched data is not an array:", data);
+          setProduct(null);
+          return;
+        }
+        const found = data.find((p) => p.id == id); // loose comparison
+        setProduct(found || null); // just use the found product
+      })
+      .catch((err) => {
+        console.error("Failed to load product:", err);
+      });
   }, [id]);
 
-  if (!product) return <p className="text-gray-400 text-center mt-20">Loading...</p>;
+  if (!product) {
+    return <p className="text-gray-400 text-center mt-20">Loading...</p>;
+  }
 
-  const specsPath = `/products/${id}/specs`;
-  const isSpecsOpen = location.pathname === specsPath;
+  const isSpecsPath = location.pathname.includes(`/products/${id}/specs`);
+  const specsTogglePath = isSpecsPath ? `/products/${id}` : `/products/${id}/specs`;
 
   const handleSpecsClick = () => {
-    if (isSpecsOpen) {
-      navigate(`/products/${id}`); // Close specs
-    } else {
-      navigate(specsPath); // Open specs
-    }
+    navigate(specsTogglePath);
   };
 
   return (
     <div className="text-white px-6 py-10">
-      <button
-        onClick={() => navigate(-1)}
-        className="mb-4 text-indigo-400 hover:text-indigo-200 flex items-center gap-2"
-      >
-        <span className="material-icons">arrow_back</span> Back
-      </button>
+      <div className="flex gap-2 mb-2">
+        <button
+          onClick={() => navigate(-1)}
+          className="text-indigo-400 hover:text-indigo-200 flex items-center gap-2"
+        >
+          <ArrowLeft size={20} /> Back
+        </button>
+      </div>
 
-      <div className="max-w-4xl mx-auto bg-gray-800 p-6 rounded-2xl shadow-lg">
+      <div className="pt-1 max-w-4xl mx-auto bg-gray-800 p-6 rounded-2xl shadow-lg">
         <h3 className="text-xl font-semibold mb-3">Specifications</h3>
-          <ul className="list-disc pl-5 space-y-1">
-            <li>Processor: Intel Core i7 12th Gen</li>
-            <li>Graphics: NVIDIA RTX 3060</li>
-            <li>RAM: 16GB DDR4</li>
-            <li>Storage: 512GB NVMe SSD</li>
-            <li>Cooling: Dual ARGB fans</li>
-            <li>Warranty: 2 Years</li>
+        {product.specs ? (
+          <ul className="list-disc pl-5 space-y-2">
+            {Object.entries(product.specs).map(([key, value]) => (
+              <li key={key}>
+                <strong className="capitalize">{key}:</strong> {value}
+              </li>
+            ))}
           </ul>
-        {/* Tabs */}
-        
+        ) : (
+          <p>No specifications available.</p>
+        )}
 
-        {/* Nested route will render here */}
-        <div className="mt-6">
+        <div className="mt-6 border-t border-gray-700 pt-6">
           <Outlet />
         </div>
       </div>
@@ -61,5 +72,4 @@ function ProductSpecs() {
   );
 }
 
-export default ProductSpecs; 
-
+export default ProductSpecs;
